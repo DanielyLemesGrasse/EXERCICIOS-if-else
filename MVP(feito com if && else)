@@ -1,0 +1,175 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<math.h>
+int main()
+{   /*
+    int codigodepagamento; //Variaveis para calcular pelo codigo de pagamento, quanto de desconto o produto ira ter na Black Friday
+    float precodeetiqueta;
+    while (codigodepagamento!=4){
+    printf("Verificacao de codigos para aplicacao de desconto na BLACK FRIDAY! \n \n");
+
+    printf("Insira o preco da etiqueta: \n");
+    scanf("%f",&precodeetiqueta);
+
+    printf("Insira o codigo do pagamento :\n");
+    scanf("%d",&codigodepagamento);
+
+
+    if (codigodepagamento==1){
+        printf("Pagamento em dinheiro ou pix: 10 por cento de desconto\n \n");
+        printf("O preco ficara em: %2.f reais \n \n",precodeetiqueta-(precodeetiqueta*0.10));
+    }else{
+        if (codigodepagamento==2){
+            printf("Credito a vista: 5 por cento de desconto \n \n");
+            printf("O preco ficara em: %2.f reais \n",precodeetiqueta-(precodeetiqueta*0.05));
+        }else{
+            if(codigodepagamento==3){
+                printf("Parcelado em 2x: Parcelado sem juros \n");
+                printf("O preco ficara em %2.f reais, parcelas fixas de: %2.f reais em 2x \n \n",precodeetiqueta,precodeetiqueta/2);
+            }else{
+                if(codigodepagamento==4){
+                    printf("Parcelado em 3x: Parcelado com acrescimo de 10 por cento \n \n");
+                    printf("O preco ficara em: %2.f reais, parcelas fixas de: %2.f reais em 3x \n \n",precodeetiqueta+(precodeetiqueta*0.10),(precodeetiqueta*0.10+precodeetiqueta)/3);
+                }
+            }
+        }
+    }
+
+    }
+    system("pause");
+
+    return 0;
+
+}
+*/
+
+
+
+
+    /* EXERCICIO 1
+
+    A empresa Você S.A. concedeu um bônus de 20% do valor do salário a todos os
+funcionários com tempo de trabalho na empresa igual ou superior a 5 anos e de 10% aos
+demais.
+
+    float tempodeservico, salarioatual,bonus1,bonus2;  //Bonus 1 aumento de quem tem 5 anos ou mais de empresa, bonus 2 aumento para os demais
+    printf("Insira o Salario base do funcionario: \n");
+    scanf("%f",&salarioatual);
+    printf("Agora insira o tempo de servico: \n");
+    scanf("%f",&tempodeservico);
+    bonus1 = salarioatual*0.20;
+    bonus2 = salarioatual*0.10;
+
+        if(tempodeservico>=5){
+            printf("O aumento vai ser de: %2.f \n",bonus1);
+            printf("Salario com aumento: %2.f \n",salarioatual+bonus1);
+
+        }else{(tempodeservico<5);
+            printf("O aumento vai ser de: %2.f \n",bonus2);
+            printf("Salario com aumento: %2.f \n",salarioatual+bonus2);
+
+        }*/
+
+
+        /*exercicio 2
+    float salariodosolicitante,valordesejado,parcela;
+    printf("Insira a sua media salarial: \n");
+    scanf("%f",&salariodosolicitante);
+    printf("Que valor voce deseja emprestar? \n");
+    scanf("%f",&valordesejado);
+    printf("Que valor voce quer pagar na parcela? \n");
+    scanf("%f",&parcela);
+
+        if (parcela>(salariodosolicitante*0.30)){
+            printf("Emprestimo Negado\n");
+        }else{
+        printf("Emprestimo Aprovado\n");
+        }*/
+
+
+
+        /*
+        EXERCICIO 3
+                        //Ler o codigo digitado e mostrar a qual estoque o produto pertence
+    int codigo;
+
+    printf("Verificaçao de Produtos\n");
+    printf("Digite o codigo do produto: \n");
+    printf("Utilize os numeros de 1 a 10: \n");
+    scanf("%d",&codigo);
+
+        if(codigo==1){  //  ==IGUAL A // != DIFERENTE DE
+            printf("Alimento nao perecivel\n");
+        }else{
+            if(codigo>=2 && codigo<=4){      //&& - operador logico "E"
+                printf("Alimento perecivel\n");
+            }else{
+                if(codigo>=5 && codigo<=6){
+                    printf("Vestuario\n");
+                }else{
+                    if(codigo==7){
+                        printf("Higiene pessoal \n");
+                    }else{
+                        if(codigo>=8 && codigo<=10){
+                           printf("Utensilio domestico\n");
+
+                        }
+                    }
+
+                }
+
+            }
+        }
+        */
+
+
+
+         /* exercicio 4
+                            //Transformar o programa anterior usando switch case e manter rodando com while
+
+    int codigo;
+    while (codigo!=10){ //Qualquer numero diferente de 10
+
+    printf("Verificaçao de Produtos\n");
+    printf("Digite o codigo do produto: \n");
+    printf("Utilize os numeros de 1 a 10: \n");
+    scanf("%d",&codigo);
+
+    switch (codigo){
+
+    case 1:
+        printf("Alimento nao perecivel \n",codigo==1);
+        break;
+    case 2:
+        printf("Alimento perecivel \n",codigo==2);
+        break;
+    case 3:
+        printf("Alimento perecivel \n",codigo==3);
+        break;
+    case 4:
+        printf("Alimento perecivel \n",codigo==4);
+        break;
+    case 5:
+        printf("Vestuario \n",codigo==5);
+        break;
+    case 6:
+        printf("Vestuario \n",codigo==6);
+        break;
+    case 7:
+        printf("Higiene pessoal \n",codigo==7);
+        break;
+    case 8:
+        printf("Utensilio domestico\n",codigo==8);
+        break;
+    case 9:
+        printf("Utensilio domestico\n",codigo==9);
+        break;
+    case 10:
+        printf("Utensilio domestico\n",codigo==10);
+        break;
+    default:
+        printf("Somente e valido numeros de 1 a 10\n");
+
+    }
+
+    */
