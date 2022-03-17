@@ -21,7 +21,7 @@ printf ("\nAgora, entre com o seu salário atual: ");
 scanf ("%f",&salario);
 bonus = 0.1 * salario;
 salario_atual = bonus + salario;
-printf ("Seu Bonus de salário sera de R$ %.2f, seu salario esse mes sera de R$ %.2f\n",bonus, salario_atual);
+printf ("Seu bônus de salário sera de R$ %.2f, seu salario esse mes sera de R$ %.2f\n",bonus, salario_atual);
 }
 
 if (tempo >= 5){
