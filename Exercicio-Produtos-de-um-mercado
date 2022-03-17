@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<math.h>
+#include<locale.h>
+
+
+  int main()
+{
+    setlocale(LC_ALL,"Portuguese");
+  int codigo;
+    while (codigo!=10){ //Qualquer numero diferente de 10
+
+    printf("\nVerificaçao de Produtos\n");
+    printf("\nDigite o codigo do produto:\n");
+    printf("\nUtilize os numeros de 1 a 10:\n");
+    scanf("%d",&codigo);
+
+    switch (codigo){
+
+    case 1:
+        printf("\nAlimento nao perecivel\n",codigo==1);
+        break;
+    case 2:
+        printf("\nAlimento perecivel\n",codigo==2);
+        break;
+    case 3:
+        printf("\nAlimento perecivel\n",codigo==3);
+        break;
+    case 4:
+        printf("\nAlimento perecivel\n",codigo==4);
+        break;
+    case 5:
+        printf("\nVestuario\n",codigo==5);
+        break;
+    case 6:
+        printf("\nVestuario\n",codigo==6);
+        break;
+    case 7:
+        printf("\nHigiene pessoal\n",codigo==7);
+        break;
+    case 8:
+        printf("\nUtensilio domestico\n",codigo==8);
+        break;
+    case 9:
+        printf("\nUtensilio domestico\n",codigo==9);
+        break;
+    case 10:
+        printf("\nUtensilio domestico\n",codigo==10);
+        break;
+    default:
+        printf("\nSomente e valido numeros de 1 a 10\n");
+
+}
+	 return 0;
+    }
+}
