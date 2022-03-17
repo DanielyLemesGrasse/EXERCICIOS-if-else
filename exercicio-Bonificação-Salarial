@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include<locale.h>
+/*  A empresa Você S.A. concedeu um bônus de 20% do valor do salário a todos os
+funcionários com tempo de trabalho na empresa igual ou superior a 5 anos e de 10% aos
+demais. Ela precisa de um programa que receba o salário e o tempo de serviço do
+funcionário, calcule e mostre o valor do bônus recebido por ele. */
+
+int main(){
+     setlocale(LC_ALL,"Portuguese");
+float tempo, salario, bonus, salario_atual ;
+
+printf ("A empresa Você S.A. esta concedendo um bonus de 20%% do salário a todos os funcionários com tempo\n");
+printf ("de trabalho na empresa igual ou superior a cinco anos e de dez por cento aos demais.\n\n\n");
+
+printf ("Por favor, entre com a quantidade de tempo que você trabalha na empresa: \n\n");
+printf ("Exemplo: 12 Anos Digite 12\n");
+scanf ("%f",&tempo);
+
+if (tempo < 5){
+printf ("\nAgora, entre com o seu salário atual: ");
+scanf ("%f",&salario);
+bonus = 0.2 * salario;
+salario_atual = bonus + salario;
+printf ("Seu Bonus de salário sera de R$ %.2f, seu salario esse mes sera de R$ %.2f\n",bonus, salario_atual);
+}
+
+if (tempo >= 5){
+printf ("\nAgora, entre com seu salário atual: ");
+scanf ("%f",&salario);
+bonus = 0.2 * salario;
+salario_atual = bonus + salario;
+printf ("Seu Bonus de salário será de R$ %.2f, seu salario esse mês será R$ %.2f\n\n",bonus, salario_atual);
+}
+
+else {
+printf ("\nVocê entrou com um valor de tempo inválido.\n");
+}
+
+return 0;
+}
