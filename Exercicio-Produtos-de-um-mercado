@@ -3,6 +3,9 @@
 #include<math.h>
 #include<locale.h>
 
+/*3. Um mercadinho precisa implementar um sistema de classificação de produtos através de
+códigos de produtos, elabore o MVP utilizando apenas if e else. Os códigos de
+classificação seguem abaixo*/
 
   int main()
 {
