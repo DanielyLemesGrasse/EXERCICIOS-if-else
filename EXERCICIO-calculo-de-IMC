@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+int main()
+{
+setlocale(LC_ALL,"portuguese");
+    float altura, massa, IMC;
+    printf("\t\t\tInsira seu peso e sua altura.\n");
+    scanf("%f%f", &massa, &altura);
+    IMC = massa/(altura*altura);
+
+    if(IMC<18.5)
+    printf("IMC: %f\t\tABAIXO DO PESO.\n",IMC);
+    else if (IMC>=18.5&&IMC<25)
+        printf("\nIMC:%f\t\tPESO NORMAL.\n",IMC);
+    else if (IMC>=25&&IMC<30)
+        printf("IMC: %f\t\tVOCÊ ESTÁ COM SOBREPESO.\n",IMC);
+    else if (IMC>=30&&IMC<35)
+        printf("IMC: %f\t\tOVOCÊ ESTÁ COM OBESIDADE DE GRAU 1.\n",IMC);
+    else if ("IMC>35 && IMC <40")
+        printf("IMC:%f\t\tVOCÊ ESTÁ COM OBESIDADE DE GRAU 2.\n", IMC);
+    else
+        printf("IMC: %f\t\tVOCÊ ESTÁ COM OBESIDADE DE GRAU 3.\n",IMC);
+    return 0;
+}
