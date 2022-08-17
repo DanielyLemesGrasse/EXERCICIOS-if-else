@@ -1,0 +1,29 @@
+/*Faça um código que recebe raio e altura de um cilindro, e retorne (na tela)
+-Volume em cm3;
+-Se for maior ou igual a um litro (1000 cm3) retorne: Suficiente, caso contrário, retorne: Insuficiente.
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float raio,altura,volume;
+    printf("\nDigite o valor do raio:");
+    scanf("%f",&raio);
+    getchar();
+    printf("\nDigite a altura:");
+    scanf("%f",&altura);
+    getchar();
+    volume=3.14*(raio*raio)*altura;
+    printf("\n O volume do cilindro eh : %2.f V", 3.14*(raio*raio)*altura);
+    if (volume>=1000){
+            printf("\nSUFICIENTE.");
+    }else{
+        printf("\n\tINSUFICIENTE.");
+
+    }
+
+
+    return 0;
+    }
