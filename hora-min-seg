@@ -1,0 +1,20 @@
+/*Escrever um programa que lê 3 valores: hora, min, seg e calcule a quantidade de segundos correspondentes.
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   float hora,minuto,seg;
+   printf("\nInsira a hora:");
+   scanf("%f",&hora);
+   printf("\nInsira os minutos:");
+   scanf("%f",&minuto);
+   printf("\nInsira os segundos :");
+   scanf("%f",&seg);
+   printf("o horario atual eh %f", (hora*3600)+(minuto*60)+seg);
+
+
+    return 0;
+    }
