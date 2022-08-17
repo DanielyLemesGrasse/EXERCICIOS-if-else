@@ -1,0 +1,27 @@
+/*Faça um código que receba a nota do trabalho e a prova de um aluno da Uniamérica, calcule a média ponderada (prova vale 40% e trabalho 60%). Retorne na tela:
+-A média final,
+-Se o aluno está aprovado ou reprovado, lembrando que a média é 70.
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   float NT,NP,M;
+   printf("\nDigite a nota do trabalho do aluno:");
+   scanf("%f",&NT);
+   printf("\nDigite a nota da prova do aluno:");
+   scanf("%f",&NP);
+   if (M>=7){
+    printf("\nPARABÉNS, ALUNO APROVADO");
+   }else{
+       printf("\nALUNO REPROVADO!!!!!!!!!!!!!!!!!!!!!!!!!");
+   }
+   M=(NT*0.6)+ (NP*0.4);
+   printf("\n\t\t------A nota final do aluno eh %.1f -------:",M);
+
+
+
+    return 0;
+    }
